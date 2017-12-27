@@ -1,6 +1,6 @@
 @extends('pages.app')
 
-@section('title', 'Applicant')
+@section('title', 'Абітурієнту')
 
 @section('content')
     <div class="container" style="margin-top: 20px;">
@@ -9,7 +9,6 @@
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title"><b>Вступ на перший курс</b></span>
-
                         <iframe width="560" height="250" src="https://www.youtube.com/embed/UZtvIM0gGWo" frameborder="0" allowfullscreen class="center-block"></iframe>
 
                         <p>
@@ -60,7 +59,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-content">

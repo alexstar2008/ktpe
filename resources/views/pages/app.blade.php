@@ -19,11 +19,6 @@
         <script type="text/javascript" src="{{ asset('js/materialize.min.js')  }}"></script>
     </head>
 <body>
-    <script>
-        $(document).ready(function(){
-            $('.modal').modal();
-        });
-    </script>
 
     <!-- Mobile Menu -->
     <ul id="slide-out" class="side-nav">
@@ -66,9 +61,9 @@
     <li>
         <a href="/employment">Працевлаштування</a>
     </li>
-    <!-- <li>
-        <a href="offers.html">Пропозиції роботодавців</a>
-    </li> -->
+    <li>
+        <a href="/offers">Пропозиції роботодавців</a>
+    </li>
     <li>
         <a href="/employers">Роботодавцю</a>
     </li>
@@ -104,7 +99,7 @@
                     <li><a href="/researching">Науково-дослідницькі роботи</a></li>
                 </ul>
             </li>
-            <li><a href="#">Студенти<i class="material-icons right">arrow_drop_down</i></a>
+            <li><a href="#">Студентам<i class="material-icons right">arrow_drop_down</i></a>
                 <ul class="submenu">
                     <li><a href="/curators">Куратори</a></li>
                     <li><a href="/subjects">Дисципліни</a></li>
@@ -115,7 +110,7 @@
             <li><a href="#">Працевлаштування<i class="material-icons right">arrow_drop_down</i></a>
                 <ul class="submenu">
                     <li><a href="/employment">Працевлаштування</a></li>
-                    <!-- <li><a href="offers.html">Пропозиції роботодавців</a></li> -->
+                    <li><a href="/offers">Пропозиції роботодавців</a></li>
                     <li><a href="/employers">Роботодавцю</a></li>
                 </ul>
             </li>
@@ -154,6 +149,9 @@
 
 <!-- Burger customizing -->
 <script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
     $('.button-collapse').sideNav({
         menuWidth: 275, // Default is 300
         edge: 'left', // Choose the horizontal origin

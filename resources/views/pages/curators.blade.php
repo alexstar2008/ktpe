@@ -7,7 +7,7 @@
             <div class="col s12 m12">
                 <div class="card horizontal curator">
                     <div class="card-image lecturer">
-                        <img src="../../../../ktpe-front/img/lecturers/duchenko.jpg">
+                        <img src="/img/lecturers/duchenko.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">

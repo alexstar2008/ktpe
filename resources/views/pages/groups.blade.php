@@ -1,5 +1,5 @@
 @extends('pages.app')
-@section('title','Групи')
+@section('title','Наукові Гуртки')
 @section('content')
     <div class="container" style="margin-top: 20px;">
         <div class="row">

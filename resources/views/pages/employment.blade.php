@@ -7,7 +7,7 @@
             <div class="col s12 m12">
                 <div class="card modal-content">   
 
-                    <img src="../../../../ktpe-front/img/kpi.png" class="center-block" style="margin-top: 15px;">
+                    <img src="/img/kpi.png" class="center-block" style="margin-top: 15px;">
                     
                     <p style="margin: 0">Випускники кафедри можуть обіймати посади:</p>
                     

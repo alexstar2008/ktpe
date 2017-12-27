@@ -1,6 +1,10 @@
 <?php
 
 use \Illuminate\Http\Request;
+use \App\News;
+use \App\Competition;
+use \App\Offer;
+use \App\Conference;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +36,16 @@ Route::prefix('/admin')->group(function(){
 */
 
 Route::get('/',function(){
-    return view('pages.home');
+    return view('pages.home',['news'=>News::all()]);
+});
+Route::get('/olympiads',function(){
+    return view('pages.olympiads',['competitions'=>Competition::all()]);
+});
+Route::get('/offers',function(){
+    return view('pages.offers',['offers'=>Offer::all()]);
+});
+Route::get('/conferences',function(){
+    return view('pages.conferences',['conferences'=>Conference::all()]);
 });
 Route::get('{all}',function (Request $request){
     $view = 'pages.'.$request->path();

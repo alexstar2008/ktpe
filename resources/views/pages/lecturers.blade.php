@@ -14,7 +14,7 @@
             <div id="lecturers" class="col s12 m12">
                <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/kreidych.png">
+                        <img src="/img/lecturers/kreidych.png">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -59,7 +59,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/semenchenko.jpg">
+                        <img src="/img/lecturers/semenchenko.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -129,7 +129,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/ilyash.png">
+                        <img src="/img/lecturers/ilyash.png">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -186,7 +186,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/roshchyna.jpg">
+                        <img src="/img/lecturers/roshchyna.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -250,7 +250,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/duchenko.jpg">
+                        <img src="/img/lecturers/duchenko.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -312,7 +312,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/ivanytskia.jpg">
+                        <img src="/img/lecturers/ivanytskia.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -364,7 +364,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/ereshko.jpg">
+                        <img src="/img/lecturers/ereshko.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -421,7 +421,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/lobodzynska.jpg">
+                        <img src="/img/lecturers/lobodzynska.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -488,7 +488,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/pavlenko.jpg">
+                        <img src="/img/lecturers/pavlenko.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -527,7 +527,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/shevchuk.jpg">
+                        <img src="/img/lecturers/shevchuk.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -613,7 +613,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/bordanova.jpg">
+                        <img src="/img/lecturers/bordanova.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -666,7 +666,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/udovytskia.jpg">
+                        <img src="/img/lecturers/udovytskia.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -711,7 +711,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/obelets.jpg">
+                        <img src="/img/lecturers/obelets.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -769,7 +769,7 @@
             <div id="helpers" class="col s12 m12">
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/renska.jpg">
+                        <img src="/img/lecturers/renska.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -781,7 +781,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/meged.jpg">
+                        <img src="/img/lecturers/meged.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -793,7 +793,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/kunytska.jpg">
+                        <img src="/img/lecturers/kunytska.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -805,7 +805,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo lecturer-photo">
-                        <img src="">
+                        {{--<img src="">--}}
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -817,7 +817,7 @@
 
                 <div class="card horizontal lecturer">
                     <div class="card-image lecturer-photo">
-                        <img src="../../../../ktpe-front/img/lecturers/melnychuk.jpg">
+                        <img src="/img/lecturers/melnychuk.jpg">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">

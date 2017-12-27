@@ -1,5 +1,4 @@
 @extends('pages.app')
-
 @section('title','Головна')
 @section('content')
 
@@ -11,16 +10,16 @@
     <div class="slider">
     	<ul class="slides">
     		<li>
-    			<img src="../../../../ktpe-front/img/photos/3.jpg">
+    			<img src="/img/photos/3.jpg">
     		</li>
     		<li>
-    			<img src="../../../../ktpe-front/img/photos/6.jpg">
+    			<img src="/img/photos/6.jpg">
+    		</li>
+    		<li>e
+    			<img src="/img/photos/4.jpg">
     		</li>
     		<li>
-    			<img src="../../../../ktpe-front/img/photos/4.jpg">
-    		</li>
-    		<li>
-    			<img src="../../../../ktpe-front/img/photos/1.jpg">
+    			<img src="/img/photos/1.jpg">
     		</li>
     	</ul>
     </div>
@@ -31,8 +30,8 @@
     		<div class="col s12 m8">
     			<div class="card">
     				<div class="card-image">
-    					<img src="../../../../ktpe-front/img/kkpi.jpg" class="main-card">
-    					<span class="card-title">Кафедра теоретичної і прикладної економіки</span>
+    					<img src="/img/kkpi.jpg" class="main-card">
+    					{{--<span class="card-title">Кафедра теоретичної і прикладної економіки</span>--}}
     				</div>
     				<div class="card-content">
     					<p align="justify"><b>Серед ключових завдань науково-педагогічної діяльності кафедри</b> – підготовка висококваліфікованих економістів, які: конкурентоспроможні на вітчизняному та світовому ринках праці; успішно орієнтуються в тенденціях розвитку науки і техніки; володіють комп’ютерними програмами; вільно спілкуються іноземними мовами; виховані; мають власну думку і шанують думку іншого.</p>
@@ -44,8 +43,8 @@
 
     			<div class="card">
     				<div class="card-image">
-    					<img src="../../../../ktpe-front/img/history.jpg" class="main-card">
-    					<span class="card-title">Історія кафедри</span>
+    					<img src="/img/history.jpg" class="main-card">
+    					{{--<span class="card-title">Історія кафедри</span>--}}
     				</div>
     				<div class="card-content">
     					<p><b>Кафедра теоретичної та прикладної економіки</b> створена у 1991 році під назвою кафедра економіки та організації радіоелектронного виробництва з метою поліпшення економічної підготовки спеціалістів технічних напрямків в Київському політехнічному інституті.</p>
@@ -57,8 +56,8 @@
 
     			<div class="card">
     				<div class="card-image">
-    					<img src="../../../../ktpe-front/img/park-kpi.jpg" class="main-card">
-    					<span class="card-title">Про спеціалізацію</span>
+    					<img src="/img/park-kpi.jpg" class="main-card">
+    					{{--<span class="card-title">Про спеціалізацію</span>--}}
     				</div>
     				<div class="card-content">
     					<p>Спеціалізація <b><i>«Управління персоналом та економіка праці»</i></b> поєднує освіту в галузі економіки, управління, маркетингу, психології та права, що надає можливість підготувати кваліфікованого менеджера з персоналу із широкими можливостями працевлаштування в українських та закордонних організаціях та представництвах різних компаній. </p> 
@@ -74,7 +73,14 @@
     			<h5 class="news-header">Новини</h5>
 
     			<div class="news" id="news">
-
+                @foreach($news as $newsItem)
+                    <div class="card news-item">
+                        <div class="card-content">
+                            <p class="date"><b>{{ @$newsItem->created_at }}</b></p>
+                            <p class="text">{{ @$newsItem->text }}</p>
+                        </div>
+                    </div>
+				@endforeach
     			</div>
     		</div>
     	</div>
@@ -92,8 +98,8 @@
     		<div id="info" class="col s12">
     			<div class="card">
     				<div class="card-image">
-    					<img src="../../../../ktpe-front/img/kkpi.jpg" class="main-card">
-    					<span class="card-title">Кафедра теоретичної і прикладної економіки</span>
+    					<img src="/img/kkpi.jpg" class="main-card">
+    					{{--<span class="card-title">Кафедра теоретичної і прикладної економіки</span>--}}
     				</div>
     				<div class="card-content">
     					<p><b>Серед ключових завдань науково-педагогічної діяльності кафедри</b> – підготовка висококваліфікованих економістів, які: конкурентоспроможні на вітчизняному та світовому ринках праці; успішно орієнтуються в тенденціях розвитку науки і техніки; володіють комп’ютерними програмами; вільно спілкуються іноземними мовами; виховані; мають власну думку і шанують думку іншого.</p>
@@ -105,8 +111,8 @@
 
     			<div class="card">
     				<div class="card-image">
-    					<img src="../../../../ktpe-front/img/history.jpg" class="main-card">
-    					<span class="card-title">Історія кафедри</span>
+    					<img src="/img/history.jpg" class="main-card">
+    					{{--<span class="card-title">Історія кафедри</span>--}}
     				</div>
     				<div class="card-content">
     					<p><b>Кафедра теоретичної та прикладної економіки</b> створена у 1991 році під назвою кафедра економіки та організації радіоелектронного виробництва з метою поліпшення економічної підготовки спеціалістів технічних напрямків в Київському політехнічному інституті.</p>
@@ -118,8 +124,8 @@
 
     			<div class="card">
     				<div class="card-image">
-    					<img src="../../../../ktpe-front/img/park-kpi.jpg" class="main-card">
-    					<span class="card-title">Про спеціалізацію</span>
+    					<img src="/img/park-kpi.jpg" class="main-card">
+    					{{--<span class="card-title">Про спеціалізацію</span>--}}
     				</div>
     				<div class="card-content">
     					<p>Спеціалізація <b><i>«Управління персоналом та економіка праці»</i></b> поєднує освіту в галузі економіки, управління, маркетингу, психології та права, що надає можливість підготувати кваліфікованого менеджера з персоналу із широкими можливостями працевлаштування в українських та закордонних організаціях та представництвах різних компаній. </p> 
@@ -129,7 +135,6 @@
     				</div>
     			</div>
     		</div>
-
     		<div id="newsM" class="col s12 news">
 
     		</div>
@@ -192,41 +197,24 @@
     		</div>
 
     		<!-- // MODAL WINDOWS -->
-
 		<script>
-			$('.carousel.carousel-slider').carousel({ fullWidth: true });
-		</script>
-		<script>
-        $.ajax({
-            url: "http://localhost:8000/api/news",
-            type: "GET",
-            success: function (responce) {
+            $('.carousel.carousel-slider').carousel({ fullWidth: true });
+			$(document).ready(function () {
+				if ($("#main_desktop .news-item").length > 4) {
+					const height1 = $('#main_desktop .col.s12.m8').outerHeight(true);
+					const height2 = $('#main_desktop h5.news-header').outerHeight(true);
+					const heightDifference = height1 - height2;
 
-                $(document).ready(function() {
-
-                    var height1 = $('#main_desktop .col.s12.m8').outerHeight(true);
-                    var height2 = $('#main_desktop h5.news-header').outerHeight(true);
-
-                    var height = height1 - height2;
-
-                    for(i = 0; i < responce.length; i++) {
-                        $(".news").html(
-                            $(".news").html() + '<div class="card news-item">' + '<div class="card-content">' + '<p class="date">' + '<b>' + responce[i].created_at + '</b>' + '</p>' + '<p class="text">' + responce[i].text + '</p>' + '</div>' + '</div>' + '<br>'
-                        );
-                    }
-
-
-                    if ($("#main_desktop .news-item").length > 4) {
-                        $('#main_desktop .news').css('height', height, 'important');
-                        $('#main_desktop .news').css('overflow-y', 'scroll', 'important');
-                    }
-
-                });
-
-            },
-            error: function (responce) {
-                alert('Smth going wrong!');
-            }
-        });
+					$('#main_desktop .news').css('height', heightDifference, 'important');
+					$('#main_desktop .news').css('overflow-y', 'auto', 'important');
+				}
+				const MOBILE_WIDTH = 601;
+				if(window.innerWidth < MOBILE_WIDTH){
+				    const newsWrapper = $('#news');
+				    const newsMobileWrapper = $('#newsM');
+					newsMobileWrapper.html(newsWrapper.html());
+					newsWrapper.html('');
+				}
+            });
 	</script>
 @endsection
