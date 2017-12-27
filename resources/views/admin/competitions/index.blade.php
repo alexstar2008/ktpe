@@ -2,11 +2,12 @@
 @section('title','Олімпіади')
 
 @section('content')
-<h2>Список олімпіад</h2>
+<h2 class="text-center">Список олімпіад</h2>
 <p>
     <a href="/admin/competitions/create">Додати олімпіаду</a>
 </p>
 <table class="table">
+<thead>
     <tr>
         <th>
             Заголовок
@@ -14,8 +15,10 @@
         <th>
             Дата створення
         </th>
+        <th></th>
     </tr>
-
+</thead>
+<tbody>
 @foreach($competitions as $competition)
     <tr>
         <td>
@@ -30,6 +33,6 @@
         </td>
     </tr>
 @endforeach
-
+</tbody>
 </table>
 @endsection

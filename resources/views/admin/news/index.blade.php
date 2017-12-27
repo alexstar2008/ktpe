@@ -2,12 +2,13 @@
 @section('title','Новини')
 
 @section('content')
-<h2>Список новин</h2>
+<h2 class="text-center">Список новин</h2>
 <p>
     <a href="/admin/news/create">Створити новину</a>
 </p>
 @isset($news)
     <table class="table">
+        <thead>
         <tr>
             <th>
                 Текст
@@ -16,7 +17,8 @@
                 Створено
             </th>
         </tr>
-
+        </thead>
+        <tbody>
         @foreach($news as $newsItem)
             <tr>
                 <td>
@@ -31,6 +33,7 @@
                 </td>
             </tr>
         @endforeach
+        </tbody>
     </table>
 @endisset
 @endsection
