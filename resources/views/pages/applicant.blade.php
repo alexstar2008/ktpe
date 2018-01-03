@@ -1,5 +1,4 @@
 @extends('pages.app')
-
 @section('title', 'Абітурієнту')
 
 @section('content')

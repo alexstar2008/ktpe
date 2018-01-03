@@ -1,6 +1,6 @@
 @extends('pages.app')
 
-@section('title', 'Абітурієнту')
+@section('title', 'For Applicant')
 
 @section('content')
     <div class="container" style="margin-top: 20px;">
