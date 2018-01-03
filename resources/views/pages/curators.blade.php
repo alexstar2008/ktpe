@@ -1,5 +1,5 @@
 @extends('pages.app')
-@section('title','Куратори')
+@section('title',__('curators.seo_title'))
 
 @section('content')
 	<div class="container" style="margin-top: 20px;">

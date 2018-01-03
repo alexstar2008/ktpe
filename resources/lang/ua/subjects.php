@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Дисципліни',
     'additional'=>'Загальний розклад можна подивитись тут: <a class="waves-effect waves-light btn" href="http://rozklad.kpi.ua/Schedules/ScheduleGroupSelection.aspx" target="_blank">Розклад</a>',
     'title'=>'Список дисциплін:',
     'list'=>'<li>

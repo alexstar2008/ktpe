@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Наукові Гуртки',
     '1' => ' <li>
                         <div class="collapsible-header">Теорія та практика бізнес-аналітики </div>
                         <div class="collapsible-body">

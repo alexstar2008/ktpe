@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Працевлаштування',
     'content'=>'   <p style="margin: 0">Випускники кафедри можуть обіймати посади:</p>
                     
                     <ol style="margin: 0">

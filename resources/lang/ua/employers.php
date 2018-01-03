@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Роботодавцю',
     'content'=>'                        <span class="card-title"><b>До уваги роботодавців!</b></span>
                         <p><b>Кафедра готує:</b></p>
                         <ul class="collapsible" data-collapsible="accordion">

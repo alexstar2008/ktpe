@@ -1,6 +1,6 @@
 @extends('pages.app')
+@section('title',__('employment.seo_title'))
 
-@section('title','Працевлаштування')
 @section('content')
     <div class="container" style="margin-top: 20px;">
         <div class="row">

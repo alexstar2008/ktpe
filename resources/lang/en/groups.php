@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Scientific Circles',
     '1' => '<li>
                         <div class="collapsible-header">Theory and practice of Business Analytics</div>
                         <div class="collapsible-body">

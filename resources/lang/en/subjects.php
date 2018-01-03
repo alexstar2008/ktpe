@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Subjects',
     'additional'=>'The full schedule you can see here: <a class="waves-effect waves-light btn" href="http://rozklad.kpi.ua/Schedules/ScheduleGroupSelection.aspx" target="_blank">Schedule</a>',
     'title'=>'List of subjects:',
     'list'=>'<li>

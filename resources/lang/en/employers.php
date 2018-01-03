@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'For Employers',
     'content'=>'         <span class="card-title"><b>For Employers!</b></span>
                         <p><b>The department trains:</b></p>
 

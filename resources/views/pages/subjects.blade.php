@@ -1,5 +1,6 @@
 @extends('pages.app')
-@section('title','Дисципліни')
+@section('title',__('subjects.seo_title'))
+
 @section('content')
 	<script>
 		$(".spoiler-trigger").click(function() {

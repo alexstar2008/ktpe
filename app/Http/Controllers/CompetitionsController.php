@@ -50,8 +50,8 @@ class CompetitionsController extends Controller
         $competition->text_en = $request->text_en;
 
         if($request->file('img')){
-            $file = $request->file('img')->store('public/competitions');
-            $competition->img = $file;
+            $file = $request->file('img')->store('public');
+            $competition->img = str_replace('public','',$file);
         }
         $competition->save();
 
@@ -77,8 +77,7 @@ class CompetitionsController extends Controller
      */
     public function edit(Competition $competition)
     {
-        $imgContent = Storage::get($competition->img);
-        return view('admin.competitions.edit',['competition'=>$competition,'imgContent'=>$imgContent]);
+        return view('admin.competitions.edit',['competition'=>$competition]);
     }
 
     /**
@@ -95,8 +94,8 @@ class CompetitionsController extends Controller
         $competition->title_en = $request->title_en;
         $competition->text_en = $request->text_en;
         if($request->file('img')){
-            $file = $request->file('img')->store('public/competitions');
-            $competition->img = $file;
+            $file = $request->file('img')->store('public');
+            $competition->img = str_replace('public','',$file);
         }
         $competition->save();
 

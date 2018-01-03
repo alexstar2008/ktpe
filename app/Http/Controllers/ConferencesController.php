@@ -47,7 +47,7 @@ class ConferencesController extends Controller
         ]);
 
         if($request->file('img')){
-            $file = $request->file('img')->store('public/conferences');
+            $file = $request->file('img')->store('public');
         }
 
         $conference = new Conference();
@@ -57,7 +57,7 @@ class ConferencesController extends Controller
         $conference->text_en = $request->text_en;
 
         if(isset($file)){
-            $conference->img = $file;
+            $conference->img = str_replace('public','',$file) ;
         }
         $conference->save();
 
@@ -84,8 +84,7 @@ class ConferencesController extends Controller
     public function edit($id)
     {
         $conference = Conference::find($id);
-        $imgContent = Storage::get($conference->img);
-        return view('admin.conferences.edit',['conference'=>$conference,'imgContent'=>$imgContent]);
+        return view('admin.conferences.edit',['conference'=>$conference]);
     }
 
     /**
@@ -100,7 +99,7 @@ class ConferencesController extends Controller
         $conference = Conference::find($id);
 
         if($request->file('img')){
-            $file = $request->file('img')->store('public/conferences');
+            $file = $request->file('img')->store('public');
         }
 
         $conference->title = $request->title;
@@ -109,7 +108,7 @@ class ConferencesController extends Controller
         $conference->text_en = $request->text_en;
 
         if(isset($file)){
-            $conference->img = $file;
+            $conference->img = str_replace('public','',$file) ;
         }
         $conference->save();
 

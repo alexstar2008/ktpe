@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Research and innovative work',
     'content'=>' <p>Research and innovative work of the department: </p>
                 <ol>
                     <b>Scientific seminars (one per month) work for students and post-graduates:</b>

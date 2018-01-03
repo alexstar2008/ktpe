@@ -67,9 +67,6 @@ Route::get('/conferences',function(){
 Route::get('/en/conferences',function(){
     return view('pages.conferences',['conferences'=>Conference::all()]);
 });
-Route::get('/en/conferences',function(){
-    return view('pages.conferences',['conferences'=>Conference::all()]);
-});
 Route::get('/en/applicant',function(){
     return view('pages.applicant-en');
 });

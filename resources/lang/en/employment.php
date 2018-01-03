@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'seo_title'=>'Employment',
     'content'=>'<p style="margin: 0">Graduates can work as:</p>
                     
                     <ol style="margin: 0">

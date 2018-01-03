@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'seo_title'=>'Викладачі',
+    'seo_title'=>'Teachers',
     'tabs'=>[
       'scientific'=>'Academic staff',
         'helpful'=> 'Peripheral staff'

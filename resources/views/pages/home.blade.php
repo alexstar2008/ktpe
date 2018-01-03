@@ -1,5 +1,5 @@
 @extends('pages.app')
-@section('title','Головна')
+@section('title',__('home.seo_title'))
 @section('content')
 
 	<script>
@@ -73,14 +73,22 @@
     			<h5 class="news-header">@lang('home.titles.news')</h5>
 
     			<div class="news" id="news">
-                @foreach($news as $newsItem)
-                    <div class="card news-item">
-                        <div class="card-content">
-                            <p class="date"><b>{{ $newsItem->created_at }}</b></p>
-                            <p class="text">{{ $newsItem->text }}</p>
-                        </div>
-                    </div>
-				@endforeach
+				@isset($news)
+					@foreach($news as $newsItem)
+							<div class="card news-item">
+								<div class="card-content">
+									<p class="date"><b>{{ $newsItem->created_at }}</b></p>
+									@if( app()->getLocale()=='ua')
+										<h5 class="text text-center">{{ $newsItem->title }}</h5>
+										<p class="text">{{ $newsItem->text }}</p>
+									@else
+										<h5 class="text text-center">{{ $newsItem->title_en }}</h5>
+										<p class="text">{{ $newsItem->text_en }}</p>
+									@endif
+								</div>
+							</div>
+						@endforeach
+				@endisset
     			</div>
     		</div>
     	</div>

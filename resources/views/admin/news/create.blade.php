@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-
+{{ Form::close() }}
 <div>
     <a href="/admin/news">До списку новин</a>
 </div>

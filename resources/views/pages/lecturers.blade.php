@@ -1,6 +1,6 @@
 @extends('pages.app')
 
-@section('title','Викладачі')
+@section('title',__('lectures.seo_title'))
 @section('content')
     <div class="container">
         <div class="row">

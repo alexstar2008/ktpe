@@ -1,5 +1,6 @@
 @extends('pages.app')
-@section('title','Наукові Гуртки')
+@section('title',__('groups.seo_title'))
+
 @section('content')
     <div class="container" style="margin-top: 20px;">
         <div class="row">
