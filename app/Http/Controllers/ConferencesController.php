@@ -53,6 +53,9 @@ class ConferencesController extends Controller
         $conference = new Conference();
         $conference->title = $request->title;
         $conference->text = $request->text;
+        $conference->title_en = $request->title_en;
+        $conference->text_en = $request->text_en;
+
         if(isset($file)){
             $conference->img = $file;
         }
@@ -99,8 +102,11 @@ class ConferencesController extends Controller
         if($request->file('img')){
             $file = $request->file('img')->store('public/conferences');
         }
+
         $conference->title = $request->title;
         $conference->text = $request->text;
+        $conference->title_en = $request->title_en;
+        $conference->text_en = $request->text_en;
 
         if(isset($file)){
             $conference->img = $file;
@@ -121,5 +127,6 @@ class ConferencesController extends Controller
         $conference = Conference::find($id);
         Storage::delete($conference->img);
         $conference->delete();
+        return redirect('/admin/conferences');
     }
 }

@@ -16,12 +16,20 @@ class CreateOffersTable extends Migration
         if(!Schema::hasTable('offers')){
             Schema::create('offers', function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('CompanyName')->nullable();
+                $table->string('company_name')->nullable();
+                $table->string('company_name_en')->nullable();
+
                 $table->string('job');
-                $table->string('ContactName');
-                $table->string('Position')->nullable();
-                $table->string('Phone')->nullable();
-                $table->string('Email')->nullable();
+                $table->string('job_en')->nullable();
+
+                $table->string('contact_name');
+                $table->string('contact_name_en')->nullable();
+
+                $table->string('position')->nullable();
+                $table->string('position_en')->nullable();
+
+                $table->string('phone')->nullable();
+                $table->string('email')->nullable();
                 $table->timestamps();
             });
         }

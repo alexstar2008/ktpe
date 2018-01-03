@@ -11,7 +11,7 @@
         <thead>
         <tr>
             <th>
-                Текст
+                Заголовок
             </th>
             <th>
                 Створено
@@ -22,14 +22,18 @@
         @foreach($news as $newsItem)
             <tr>
                 <td>
-                    {{$newsItem->text}}
+                    {{$newsItem->title}}
                 </td>
                 <td>
-                    {{$newsItem->created_a}}
+                    {{$newsItem->created_at}}
                 </td>
                 <td>
                     <a href="/admin/news/{{$newsItem->id}}/edit">Редагувати</a>
-                    {{--@Html.ActionLink("Delete", "Delete", new { id = item.Id })--}}
+                </td>
+                <td>
+                    {{Form::open([ 'method'  => 'delete', 'url' => '/admin/news/'.$newsItem->id ] ) }}
+                        {{ Form::submit('Видалити', ['class' => 'btn btn-danger']) }}
+                    {{Form::close()}}
                 </td>
             </tr>
         @endforeach

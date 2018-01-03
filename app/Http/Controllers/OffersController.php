@@ -41,9 +41,20 @@ class OffersController extends Controller
     public function store(Request $request)
     {
         $offer = new Offer();
-        $offer->companyName = $request->companyName;
+        $offer->company_name = $request->company_name;
+        $offer->company_name_en = $request->company_name_en;
+
         $offer->job = $request->job;
-        $offer->contactName = $request->contactName;
+        $offer->job_en = $request->job_en;
+
+        $offer->contact_name = $request->contact_name;
+        $offer->contact_name_en = $request->contact_name_en;
+
+        $offer->position = $request->position;
+        $offer->position_en = $request->position_en;
+
+        $offer->phone = $request->phone;
+        $offer->email = $request->email;
 
         $offer->save();
 
@@ -81,9 +92,21 @@ class OffersController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
-        $offer->companyName = $request->companyName;
+        $offer->company_name = $request->company_name;
+        $offer->company_name_en = $request->company_name_en;
+
         $offer->job = $request->job;
-        $offer->contactName = $request->contactName;
+        $offer->job_en = $request->job_en;
+
+        $offer->contact_name = $request->contact_name;
+        $offer->contact_name_en = $request->contact_name_en;
+
+        $offer->position = $request->position;
+        $offer->position_en = $request->position_en;
+
+        $offer->phone = $request->phone;
+        $offer->email = $request->email;
+
         $offer->save();
 
         return redirect('/admin/offers');
@@ -98,5 +121,6 @@ class OffersController extends Controller
     public function destroy(Offer $offer)
     {
         $offer->delete();
+        return redirect('/admin/offers');
     }
 }

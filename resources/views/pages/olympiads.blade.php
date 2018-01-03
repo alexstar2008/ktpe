@@ -19,7 +19,7 @@
                                 <p>{{ $competition->text }}</p>
                             </div>
                             <div class="card-action">
-                                <a href="#modal-olympiads{{$key}}">Більше інформації</a>
+                                <a href="#modal-olympiads{{$key}}">@lang('shared.more')</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <p>{{ $competition->text }}</p>
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Назад</a>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">@lang('shared.back')</a>
                         </div>
                     </div>
                 </div>

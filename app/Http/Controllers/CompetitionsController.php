@@ -46,6 +46,9 @@ class CompetitionsController extends Controller
         $competition = new Competition();
         $competition->title = $request->title;
         $competition->text = $request->text;
+        $competition->title_en = $request->title_en;
+        $competition->text_en = $request->text_en;
+
         if($request->file('img')){
             $file = $request->file('img')->store('public/competitions');
             $competition->img = $file;
@@ -89,6 +92,8 @@ class CompetitionsController extends Controller
     {
         $competition->title = $request->title;
         $competition->text = $request->text;
+        $competition->title_en = $request->title_en;
+        $competition->text_en = $request->text_en;
         if($request->file('img')){
             $file = $request->file('img')->store('public/competitions');
             $competition->img = $file;
@@ -106,6 +111,8 @@ class CompetitionsController extends Controller
      */
     public function destroy(Competition $competition)
     {
+        Storage::delete($competition->img);
         $competition->delete();
+        return redirect('/admin/competitions');
     }
 }

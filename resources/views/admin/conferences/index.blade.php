@@ -30,7 +30,11 @@
                 </td>
                 <td>
                     <a href="/admin/conferences/{{$conference->id}}/edit">Редагувати</a>
-                    {{--@Html.ActionLink("Delete", "Delete", new { id = item.Id })--}}
+                </td>
+                <td>
+                    {{Form::open([ 'method'  => 'delete', 'url' => '/admin/conferences/'.$conference->id ] ) }}
+                    {{ Form::submit('Видалити', ['class' => 'btn btn-danger']) }}
+                    {{Form::close()}}
                 </td>
             </tr>
         @endforeach

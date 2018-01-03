@@ -44,6 +44,8 @@ class NewsController extends Controller
         $news = new News();
         $news->title = $request->title;
         $news->text = $request->text;
+        $news->title_en = $request->title_en;
+        $news->text_en = $request->text_en;
 
         $news->save();
 
@@ -85,6 +87,8 @@ class NewsController extends Controller
         $news = News::find($id);
         $news->title = $request->title;
         $news->text = $request->text;
+        $news->title_en = $request->title_en;
+        $news->text_en = $request->text_en;
         $news->save();
 
         return redirect('/admin/news');
@@ -99,5 +103,6 @@ class NewsController extends Controller
     public function destroy(News $news)
     {
         $news->delete();
+        return redirect('/admin/news');
     }
 }

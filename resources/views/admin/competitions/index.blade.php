@@ -15,7 +15,6 @@
         <th>
             Дата створення
         </th>
-        <th></th>
     </tr>
 </thead>
 <tbody>
@@ -29,7 +28,11 @@
         </td>
         <td>
             <a  href="/admin/competitions/{{$competition->id}}/edit">Редагувати</a>
-            {{--<a  href="/competitions">Видалити</a>--}}
+        </td>
+        <td>
+            {{Form::open([ 'method'  => 'delete', 'url' => '/admin/competitions/'.$competition->id ] ) }}
+            {{ Form::submit('Видалити', ['class' => 'btn btn-danger']) }}
+            {{Form::close()}}
         </td>
     </tr>
 @endforeach

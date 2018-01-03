@@ -11,16 +11,25 @@
             <label class="control-label col-md-2">Укр. Заголовок</label>
             <div class="col-md-10">
                 <input class="form-control" value="{{$newsItem->title}}" name="title" />
-                @Html.EditorFor(model => model.UaText, new { htmlAttributes = new { @class = "form-control" } })
                 {{--@Html.ValidationMessageFor(model => model.UaText, "", new { @class = "text-danger" })--}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Eng. Заголовок</label>
+            <div class="col-md-10">
+                <input class="form-control" value="{{$newsItem->title_en}}" name="title_en" />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Текст</label>
             <div class="col-md-10">
                 <input class="form-control" value="{{$newsItem->text}}" name="text" />
-                @Html.EditorFor(model => model.UaText, new { htmlAttributes = new { @class = "form-control" } })
-                {{--@Html.ValidationMessageFor(model => model.UaText, "", new { @class = "text-danger" })--}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Eng. Текст</label>
+            <div class="col-md-10">
+                <input class="form-control" value="{{$newsItem->text_en}}" name="text_en" />
             </div>
         </div>
         <div class="form-group">

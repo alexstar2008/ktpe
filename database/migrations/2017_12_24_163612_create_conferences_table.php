@@ -18,6 +18,8 @@ class CreateConferencesTable extends Migration
                 $table->increments('id');
                 $table->string('title');
                 $table->string('text');
+                $table->string('title_en')->nullable();
+                $table->string('text_en')->nullable();
                 $table->string('img')->nullable();
                 $table->timestamps();
             });

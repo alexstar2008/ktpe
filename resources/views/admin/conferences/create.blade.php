@@ -10,6 +10,7 @@
     <div class="form-horizontal">
         <h4>Заповніть всі поля для створення нового запису</h4>
         <hr />
+
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Заголовок</label>
             <div class="col-md-10">
@@ -18,14 +19,23 @@
             </div>
         </div>
         <div class="form-group">
+            <label class="control-label col-md-2">Eng. Заголовок</label>
+            <div class="col-md-10">
+                <input class="form-control" name="title_en" />
+            </div>
+        </div>
+        <div class="form-group">
             <label class="control-label col-md-2">Укр. Текст</label>
             <div class="col-md-10">
                 <input class="form-control" name="text" />
-                {{--@Html.ValidationMessageFor(model => model.UaHeader, "", new { @class = "text-danger" })--}}
             </div>
         </div>
-
-
+        <div class="form-group">
+            <label class="control-label col-md-2">Eng. Текст</label>
+            <div class="col-md-10">
+                <input class="form-control" name="text_en" />
+            </div>
+        </div>
         <div class="form-group">
             <label class="control-label col-md-2">Фото</label>
             <div class="col-md-10" style="display: none"></div>
@@ -36,7 +46,6 @@
                 {{--<i id="fileUploadSpiner" class="fa fa-circle-o-notch fa-spin" style="margin: 20px;visibility: hidden;font-size:24px"></i>--}}
             </div>
         </div>
-
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">

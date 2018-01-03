@@ -13,14 +13,24 @@
             <label class="control-label col-md-2">Укр. Заголовок</label>
             <div class="col-md-10">
                 <input class="form-control" name="title" />
-                {{--@Html.ValidationMessageFor(model => model.UaText, "", new { @class = "text-danger" })--}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Eng. Заголовок</label>
+            <div class="col-md-10">
+                <input class="form-control" name="title_en" />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Текст</label>
             <div class="col-md-10">
                 <input class="form-control" name="text" />
-                {{--@Html.ValidationMessageFor(model => model.UaText, "", new { @class = "text-danger" })--}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Eng. Текст</label>
+            <div class="col-md-10">
+                <input class="form-control" name="text_en" />
             </div>
         </div>
 

@@ -13,13 +13,13 @@
                 Назва компанії
             </th>
             <th>
-                Робота
+                Вакансія
             </th>
             <th>
                 Позиція
             </th>
             <th>
-                Повне ім'я
+                Контактна особа
             </th>
             <th>
                 Телефон
@@ -34,16 +34,16 @@
         @foreach($offers as $offer)
             <tr>
                 <td>
-                    {{$offer->companyName}}
+                    {{$offer->company_name}}
                 </td>
                 <td>
                     {{$offer->job}}
                 </td>
                 <td>
-                    {{$offer->companyName}}
+                    {{$offer->position}}
                 </td>
                 <td>
-                    {{$offer->contactName}}
+                    {{$offer->contact_name}}
                 </td>
                 <td>
                     {{$offer->phone}}
@@ -53,7 +53,11 @@
                 </td>
                 <td>
                     <a href="/admin/offers/{{$offer->id}}/edit">Редагувати</a>
-                    {{--@Html.ActionLink("Delete", "Delete", new { id = item.Id })--}}
+                </td>
+                <td>
+                    {{Form::open([ 'method'  => 'delete', 'url' => '/admin/offers/'.$offer->id ] ) }}
+                    {{ Form::submit('Видалити', ['class' => 'btn btn-danger']) }}
+                    {{Form::close()}}
                 </td>
             </tr>
         @endforeach

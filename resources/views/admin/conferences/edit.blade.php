@@ -15,28 +15,37 @@
     {{--@Html.ValidationSummary(true, "", new { @class = "text-danger" })--}}
 
     <div class="form-group">
-        <label class="control-label col-md-2">Заголовок</label>
+        <label class="control-label col-md-2">Укр. Заголовок</label>
         <div class="col-md-10">
             <input class="form-control" value="{{$conference->title}}" name="title" />
             {{--@Html.ValidationMessageFor(model => model.UaHeader, "", new { @class = "text-danger" })--}}
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-2">Текст</label>
+        <label class="control-label col-md-2">Eng. Заголовок</label>
         <div class="col-md-10">
-            <input class="form-control" value="{{$conference->text}}" name="text" />
-            {{--@Html.ValidationMessageFor(model => model.UaHeader, "", new { @class = "text-danger" })--}}
+            <input class="form-control" value="{{$conference->title_en}}" name="title_en" />
         </div>
     </div>
-
-
+    <div class="form-group">
+        <label class="control-label col-md-2">Укр. Текст</label>
+        <div class="col-md-10">
+            <input class="form-control" value="{{$conference->text}}" name="text" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Eng. Текст</label>
+        <div class="col-md-10">
+            <input class="form-control" value="{{$conference->text_en}}" name="text_en" />
+        </div>
+    </div>
     <div class="form-group">
         <label class="control-label col-md-2">Фото</label>
         <div class="col-md-10" style="display: none"></div>
         <div class="col-md-10">
-            @if($conference->img)
+            @isset($conference->img)
                 <img id="imm" src="data:image/jpeg;base64,{{ base64_encode($imgContent) }}" alt="Photo" style="width: 200px; height: 200px;" class="img-rounded">
-            @endif
+            @endisset
             <input type="file" name="img" id="uploadFile" /><br />
             {{--<a id="photoUploadSubmit" class="btn btn-default">Завантажити</a>--}}
             {{--<i id="fileUploadSpiner" class="fa fa-circle-o-notch fa-spin" style="margin: 20px;visibility: hidden;font-size:24px"></i>--}}

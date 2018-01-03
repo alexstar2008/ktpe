@@ -1,172 +1,18 @@
-﻿<html>
+<?php
 
-<head>
-
-<title>Lecturers</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="..//css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="..//css/style.css" media="screen,projection" />
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="..//js/materialize.min.js"></script>
-
-    <link rel="icon" type="image/x-icon" href="//kpi.png">
-</head>
-
-<body>
-
-    <script>
-        $(document).ready(function(){
-            $('.modal').modal();
-        });
-    </script>
-
-    <!-- MENU -->
-    <ul id="slide-out" class="side-nav">
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="lecturers.html">Lecturers</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="conferences.html">Conferences</a>
-        </li>
-        <li>
-            <a href="olympiads.html">Olympiads</a>
-        </li>
-        <li>
-            <a href="groups.html">Scientific groups</a>
-        </li>
-        <li>
-            <a href="researching.html">Research and development efforts</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="curators.html">Curators</a>
-        </li>
-        <li>
-            <a href="subjects.html">Disciplines</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="applicant.html">For applicants</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="activity.html">International activity</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="employment.html">Employment</a>
-        </li>
-        <!-- <li>
-            <a href=" offers.html">Пропозиції роботодавців</a>
-        </li> -->
-        <li>
-            <a href="employers.html">For employers</a>
-        </li>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="..//index.html"><img src="//Flag_of_Ukraine.png" class="flag"></a>
-            <!-- <a href="html/en/index.html"><img src="img/Prapor_Velikoyi_Britaniyi.png" class="flag"></a> -->
-        </li>
-    </ul> 
-    <!-- MENU -->
-
-    <div class="head">        
-        <!-- <img class="head-background" src="img/Shapka.png" /> -->
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>  <!-- Burger Button -->
-        <img src="//kpi.png" class="head-logo">
-        <div class="center-block">
-            <div>
-                <span>National Technical University of Ukraine <br>"Igor Sikorsky Kyiv Polytechnic Institute"</span>
-            </div>
-            <div>
-                <span>Department of Theoretic and Applied Economics</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="nav-wrapper">
-        <ul class="main-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href=" lecturers.html">Lecturers</a></li>
-            <li><a href="#">Science<i class="material-icons right">arrow_drop_down</i></a>
-                <ul class="submenu">
-                    <li><a href="conferences.html">Conferences</a></li>
-                    <li><a href="olympiads.html">Olympiads</a></li>
-                    <li><a href="groups.html">Scientific groups</a></li>
-                    <li><a href="researching.html">Research and development efforts</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Students<i class="material-icons right">arrow_drop_down</i></a>
-                <ul class="submenu">
-                    <li><a href="curators.html">Curators</a></li>
-                    <li><a href="subjects.html">Disciplines</a></li>
-                </ul>
-            </li>
-            <li><a href="applicant.html">For applicants</a></li>
-            <li><a href="activity.html">International activity</a></li>
-            <li><a href="#">Employment<i class="material-icons right">arrow_drop_down</i></a>
-                <ul class="submenu">
-                    <li><a href="employment.html">Employment</a></li>
-                    <!-- <li><a href=" offers.html">Пропозиції роботодавців</a></li> -->
-                    <li><a href="employers.html">For employers</a></li>
-                </ul>
-            </li>
-            <li><a href="#"><img src="//Prapor_Velikoyi_Britaniyi.png" class="flag"><i class="material-icons right">arrow_drop_down</i></a>
-                <ul class="submenu">
-                    <li><a href="..//index.html"><img src="//Flag_of_Ukraine.png" class="flag"></a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- <div class="container navigation">
-        <div class="row">
-            <div class="col s12 m12">
-                <b><span>Викладачі</span></b>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m12" style="margin-top: 20px;">
-                <ul class="tabs">
-                    <li class="tab col s6"><a class="active" href="#lecturers">Academic staff</a></li>
-                    <li class="tab col s6"><a href="#helpers">Peripheral staff</a></li>
-                </ul>
-            </div>
-
-            <div id="lecturers" class="col s12 m12">
-               <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/kreidych.png">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Iryna Kreydych</b></span>
-                            <p><i>Doctor of Economics, Full Professor, Head of the Department</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#kreidych">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="kreidych" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Iryna Kreydych</h4>
+return [
+    'seo_title'=>'Викладачі',
+    'tabs'=>[
+      'scientific'=>'Academic staff',
+        'helpful'=> 'Peripheral staff'
+    ],
+    'more'=>'More information',
+    'back'=>'Back',
+    'scientific' => [
+        '1' => [
+            'title' => 'Iryna Kreydych',
+            'desc' => 'Doctor of Economics, Full Professor, Head of the Department',
+            'modal' => '        <h4>Iryna Kreydych</h4>
 
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/kim26" target="_blank">Profile in Intellect</a></p>
 
@@ -186,32 +32,12 @@
 
                         <p><b>Research interests:</b> investment policy at the macro level, innovation and investment activities of enterprises, tax optimization, financial services market, project management, cash flow management.</p>
 
-                        <p><b>Disciplines:</b> finance, economics and industrial engineering.</p>
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/semenchenko.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Natalia Semenchenko</b></span>
-                            <p><i>Doctor of Economics, Full Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#semenchenko">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="semenchenko" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Natalia Semenchenko</h4>
+                        <p><b>Disciplines:</b> finance, economics and industrial engineering.</p>',
+            ],
+        '2' => [
+            'title' => 'Natalia Semenchenkoа',
+            'desc' => 'Doctor of Economics, Full Professor',
+            'modal' => '    <h4>Natalia Semenchenko</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/snv34" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Full Professor</p> 
@@ -256,38 +82,19 @@
                         <p><b>Disciplines:</b> «Business Economics and Production Organization", "Finance Company", "Applied Economics».</p>
                         <p><b>Social activities:</b> organization of scientific, methodical conferences, workshops and seminars to study the social, political and economic aspects of development of Ukraine, as well as promoting the renewal and improvement of educational processes in education and finding new topical areas of science.</p>
                         <p><b>Hobbies:</b> sports, chess, travel.</p>
-                        <p><b>e-mail:</b> natalya8881@ukr.net</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/ilyash.png">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Olga Ilyash</b></span>
-                            <p><i>Doctor of Economics, Full Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#ilyash">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="ilyash" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Olga Ilyash</h4>
+                        <p><b>e-mail:</b> natalya8881@ukr.net</p>'
+        ],
+        '3' => [
+            'title' => 'Olga Ilyash',
+            'desc' => 'Doctor of Economics, Full Professor',
+            'modal' => '      <h4>Olga Ilyash</h4>
                         
                         <p><b>Title:</b> Full Professor</p>
                         <p><b>Scientific degree:</b> Doctor of Economics</p>
                         <p><b>Position:</b> Full Professor of Theoretical and Applied Economics</p>
                         <p><b>Guide:</b> Head of the Department of Economics and Business training complexes "National Technical University of Ukraine" Kyiv Polytechnic Institute "- International University of Finance".</p>
                         <p><b>Education:</b> Lviv Academy of Commerce, 1999.</p>
-                        <p>A member of the Specialized Academic Council of the National Institute for Strategic Studies under the President of Ukraine on doctoral and master's theses on the specialty 21.04.01 - economic security.</p>
+                        <p>A member of the Specialized Academic Council of the National Institute for Strategic Studies under the President of Ukraine on doctoral and master\'s theses on the specialty 21.04.01 - economic security.</p>
                         <p>One of the founders of the first scientific school of Lviv Commercial Academy "Ensuring economic security social and economic systems." Is the head of the NGO "academic space." Member of the European Association of Labor Economists of (European Association of Labour Economists). Member of the Scientific Society. Shevchenko in Lviv.</p>
                         <p>A member of the editorial board of the scientific journal WSIiU i CEASC "Nowoczesna edukacja: filozofia, innowacja; doświadczenie "(Poland) and the Scientific Journal Lviv Commercial Academy.</p>
                         <p>Horizon 2020 program experts in the Expert area Education, Audio-Visual and Culture Executive Agency programmes COSME. Head of the Section of Education of Ukraine Expert examination of projects of scientific papers, scientific and technical (experimental) development of young scientists in "economic transformation; demographic change and well-being of society. "</p>
@@ -303,7 +110,7 @@
                             <li>Ilyash O. The principles of state regulation in the sphere of socio-economic security of Ukraine <!-- / Olha Ilyash // Economic Annals XXI (Economic chasopysHHI), issue: 07-08 (1) / 2014, page: 24- 28. --></li>
                             <li>Ilyash О priorities of state regulation of social and economic security of Ukraine <!-- / ОIlyash, TG Vasyltsiv // / Strategic prirytety. - 2014. - № 3 (32). - S.150-157. --></li>
                             <li>Ilyash О. І. System of indicators of socioeconomic security of Ukraine within the bounds of functional components<!-- / Olha Ilyash // Developmental challenges of the economy and enterprises after crisis/ Foundation of the Cracow University of Economics. – Cracow, Poland, 2014. – P. 97-107. --></li>
-                            <li>Ilyash О Milestones of the state labour market regulation policy in Ukraine <!-- / Olha Ilyash // Journal L 'Association 1901 "SEPIKE" // Social Educational Project of Improving Knowledge in Economics. - Norderstedt, Deutschland, Poitiers, France. - 2013. - P. 43-46. --></li>
+                            <li>Ilyash О Milestones of the state labour market regulation policy in Ukraine <!-- / Olha Ilyash // Journal L \'Association 1901 "SEPIKE" // Social Educational Project of Improving Knowledge in Economics. - Norderstedt, Deutschland, Poitiers, France. - 2013. - P. 43-46. --></li>
                             <li>Ilyash O. Transformation of social safety Ukraine: regional dimension: Monograph <!-- / O. Ilyash. - Lviv: Pais, 2012. - 592 p --></li>
                             <li>Ilyash О content identification and ranking of threats Social Security <!-- / AI Ilyash // Economy and prediction. - 2012. - №2. - S. 118-129. --></li>
                             <li>Ilyash О Strategic Guidelines state policy of Ukraine towards improving the quality of social services <!-- / Olga Ilyash // Journal of the European economy. - 2012. - Vol 11, №2 (Jun.). - S. 215-227. --></li>
@@ -311,32 +118,12 @@
                             <li>Labor Economics and Labor Relations: teach. guidances. <!-- / O Ilyash, S Hrynkevych. - K: Knowledge, 2010. - 476 p. --></li>
                         </ol>
                         <p>Total published over 200 scientific and methodological publications, incl .: 2 manuals stamped MES (one user forthcoming); 150 scientific papers, including over 100 - in professional journals and peer-reviewed Economic Sciences in scientometric databases registered in SCOPUS scientific journals, one-man and 13 collective monographs; 5 trained scientific and analytical reports used by the Ministry of Social Policy, Secretariat of the Verkhovna Rada of Ukraine on National Security and Defensе</p>
-                        <p><b>e-mail:</b> oliai@meta.uat</p>
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/roshchyna.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Nadiia Roshchyna</b></span>
-                            <p><i>Ph. D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#roshchyna">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="roshchyna" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Nadiia Roshchyna</h4>
+                        <p><b>e-mail:</b> oliai@meta.uat</p>'
+        ],
+        '4' => [
+            'title' => 'Nadiia Roshchyna',
+            'desc' => 'Ph. D. in Economics, Associate Professor',
+            'modal' => '    <h4>Nadiia Roshchyna</h4>
                         <!-- <p><a href="###">Profile in Intellect</a></p> -->
 
                         <p><b>Title:</b> Associate Professor</p>
@@ -376,31 +163,12 @@
 
                         <p><b>Disciplines:</b> "Loan finance Banks and Banking"; "Economics and Production Organization"; "Finances"; "Fundamentals of Banking", "Banking", "Financial Management"; "Finance companies", "Financial Analysis"; "Crisis management now"; "Money and Credit", "Financial Markets", "The market for financial services." </p>
                         <p><b>Hobbies:</b> travelling. </p>
-                        <p><b>e-mail:</b> 2203883@ukr.net</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/duchenko.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Duchenko Marina</b></span>
-                            <p><i>Ph.D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#duchenko">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="duchenko" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Duchenko Marina</h4>
+                        <p><b>e-mail:</b> 2203883@ukr.net</p>'
+        ],
+        '5' => [
+            'title' => 'Duchenko Marina',
+            'desc' => 'Ph.D. in Economics, Associate Professor',
+            'modal' => '<h4>Duchenko Marina</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/dmm19" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Associate Professor</p> 
@@ -416,7 +184,7 @@
                             <li>Business Economics: Lectures: 2 Vol. <!-- / Under total. Ed. PV Cruz, K.Shelehova. - K. NTU "KPI" 2012 - Kn. 2. Theory and Practice hospodaryuvannya.- CH 2 - Theme 28. Financial control of the company. --></li>
                             <li>Business Economics: Textbook <!-- / under total. Ed. P.Krusha, V..Podvihinoyi, B..Serdyuka. - K .: Elga-N, KTH, 2007. - 780s. Chapter 17. Financial results and economic performance. --></li>
                             <li>Organization and management of a united credit union. <!-- / Ed. M Duchenko. Training and practical issue. - K .: Knowledge Press, 2006. - 274 p. --></li>
-                            <li>Loans in rural areas. Collection recommendations for credit unions. Part 2 <!-- / ed. M..Dem'yanenka. Tutorial - K .: Knowledge Press, 2006. - 203 p. --></li>
+                            <li>Loans in rural areas. Collection recommendations for credit unions. Part 2 <!-- / ed. M..Dem\'yanenka. Tutorial - K .: Knowledge Press, 2006. - 203 p. --></li>
                             <li>Credit unions in Ukraine: the basic principles of business. Tutorial. In 2 books. <!-- / Ed. A.Olenchyka. 7. Financial Management Module. (With Prymostka Kravchenko LE LE) - K: UISMD KNEU, 2005. - 652s book first., Second book - 664 p. --></li>
                             <li>Credit unions in Ukraine: the basic principles of business. Textbook. <!-- / Ed. A.Olenchyka. Module 3. Financial Management. (With Prymostka LE) - K: UISMD KNEU, 2005. - 448 p. --></li>
                         </ol>
@@ -437,31 +205,12 @@
                         <p><b>Research interests:</b> problems of small and medium business in Ukraine, development of financing instruments business development and transformation of financial markets.</p>
                         <p><b>Disciplines:</b> "Economics and organization of production planning", "Economy and Business", "Fundamentals of Entrepreneurship", "Feasibility engineering solutions", "Financial Management", "Economic statistics".</p>
                         <p><b>Hobbies:</b> painting, singing, skiing, off-road troffi, outdoor recreation, travel.</p>
-                        <p><b>e-mail:</b> marinaduchenko@gmail.com</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/ivanytskia.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Olena Ivanytska</b></span>
-                            <p><i>Ph.D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#ivanytskia">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="ivanytskia" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Olena Ivanytska</h4>
+                        <p><b>e-mail:</b> marinaduchenko@gmail.com</p>'
+        ],
+        '6' => [
+            'title' => 'Olena Ivanytska',
+            'desc' => 'Ph.D. in Economics, Associate Professor',
+            'modal' => '  <h4>Olena Ivanytska</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/iov22" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Associate Professor</p> 
@@ -488,31 +237,12 @@
                         <p><b>Research interests:</b> innovation processes in the economy, economic security, finance, human resource management organization.</p>
                         <p><b>Disciplines:</b> Money and Credit, Economy and Business Economics organization and planning of production, basics of entrepreneurship.</p>
                         <p><b>Hobbies:</b> reading, sports.</p>
-                        <p><b>e-mail:</b> vitalevna.o@gmail.com</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/ereshko.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Julia Yereshko</b></span>
-                            <p><i>Ph.D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#ereshko">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="ereshko" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Julia Yereshko</h4>
+                        <p><b>e-mail:</b> vitalevna.o@gmail.com</p>'
+        ],
+        '7' => [
+            'title' => 'Julia Yereshko',
+            'desc' => 'Ph.D. in Economics, Associate Professor',
+            'modal' => '<h4>Julia Yereshko</h4>
                        <!--  <p><a href="http://intellect.ktpe.kpi.ua/profile/eyo1" target="_blank">Profile in Intellect</a></p> -->
                         <p><b>Category:</b> Professors </p> 
                         <p><b>Title:</b> Associate Professor (December 2014)</p> 
@@ -556,31 +286,12 @@
                         <p><b>Languages:</b> Native in Ukrainian, fluent in English, Polish and Russian, practical knowledge of French, German – beginner’s level</p>
 
                         <p><b>Hobbies and interests:</b> Economics, literature, art, tourism, yoga and other activities.</p>
-                        <p><b>e-mail:</b> julia.jereshko@gmail.com</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/lobodzynska.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Tatiana Lobodzynska</b></span>
-                            <p><i>Ph.D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#lobodzynska">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="lobodzynska" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Tatiana Lobodzynska</h4>
+                        <p><b>e-mail:</b> julia.jereshko@gmail.com</p>'
+        ],
+        '8' => [
+            'title' => 'Tatiana Lobodzynska',
+            'desc' => 'Ph.D. in Economics, Associate Professorт',
+            'modal' => '    <h4>Tatiana Lobodzynska</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/ltp1" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Associate Professor</p> 
@@ -607,7 +318,7 @@
                             <li>Approaches to determine the cost innovative products for the cable industry example <!-- // Economic Journal NTU "KPI". Collected Works. - 2011. - № 8. - p.51 - 57. --></li>
                             <li>Formation of criteria for evaluating competitive products <!-- // "Economics. Management. Business". Proceedings of SUICT. - 2010. - № 2. - p.49 - 53. --></li>
                             <li>Improving product quality as a factor in ensuring competitiveness <!-- // "Modern trends in technology and education infocommunications" .Harkiv, 2010. - S.308-309 --></li>
-                            <li>The essence and peculiarities of state regulation of innovation activity <!-- // "Modern ICT» COMINFO'2010-Livadia. 2010. - S. 274-275 --></li>
+                            <li>The essence and peculiarities of state regulation of innovation activity <!-- // "Modern ICT» COMINFO\'2010-Livadia. 2010. - S. 274-275 --></li>
                             <li>The evolution of integrated approaches to assess the financial condition of the enterprise<!--  // Economic Journal NTU "KPI". Collected Works. - 2009. - № 6. - S.205 - 211. --></li>
                             <li>Evaluation of the competitiveness of high-tech products (for example, cable production) <!-- // Economic Journal NTU "KPI". Collected Works. - 2009. - № 6. - S.200- 205. --></li>
                             <li>The state and prospects of development of innovative production of cable products in Ukraine <!-- // Scientific Herald. Academy of municipal management. Series "Economy". Collected Works - 2008 Issue number 4 "Innovative strategies of regional economies", S. 296 - 303. --></li>
@@ -622,66 +333,29 @@
                         <p><b>Research interests:</b> competitiveness of innovative products, accounting and financial reporting according to international hundred.</p>
                         <!-- <p><b>Disciplines:</b> "Бухгалтерський облік" , «Облік і аудит», «Економіка організації і планування виробництва».</p>
                         <p><b>Hobbies:</b> активний відпочинок на природі, вирощування квітів.</p> -->
-                        <p><b>e-mail:</b> tatiana08@ukr.net</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/pavlenko.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Tetiana Pavlenko</b></span>
-                            <p><i>Ph.D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#pavlenko">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="pavlenko" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Tetiana Pavlenko</h4>
+                        <p><b>e-mail:</b> tatiana08@ukr.net</p>'
+        ],
+        '9' => [
+            'title' => 'Tetiana Pavlenko',
+            'desc' => 'Ph.D. in Economics, Associate Professor',
+            'modal' => '<h4>Tetiana Pavlenko</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/ptv22" target="_blank">Profile in Intellect</a></p>
 
                         <p>Ph.D. in Economics, Associate Professor</p>
 
-                        <p>In 2004 she graduated from the National Technical University of Ukraine "Kyiv Polytechnic Institute", earned a master's degree in marketing and received a diploma with honors. From 2005 to 2009 she studied at the graduate school part-time at the Department of Theoretical and Applied Economics, National Technical University "KPI". In 2010 graduated from the Institute of Intellectual Property Odessa National Law Academy in Kiev specialty "Intellectual Property".</p>
+                        <p>In 2004 she graduated from the National Technical University of Ukraine "Kyiv Polytechnic Institute", earned a master\'s degree in marketing and received a diploma with honors. From 2005 to 2009 she studied at the graduate school part-time at the Department of Theoretical and Applied Economics, National Technical University "KPI". In 2010 graduated from the Institute of Intellectual Property Odessa National Law Academy in Kiev specialty "Intellectual Property".</p>
 
                         <p>In 2010 she defended her thesis on "The economic mechanism of intellectual property in electronic industry enterprises."</p>
 
                         <p><b>Research interests:</b> intellectual property management knowledge based enterprises.</p>
 
                         <p><b>Disciplines:</b> "Economics and Production Organization", "Feasibility engineering solutions".</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/shevchuk.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Olena Shevchuk</b></span>
-                            <p><i>Ph.D. in Economics, Associate Professor</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#shevchuk">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="shevchuk" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Olena Shevchuk</h4>
+              '
+        ],
+        '10' => [
+            'title' => 'Olena Shevchuk',
+            'desc' => 'Ph.D. in Economics, Associate Professor',
+            'modal' => '<h4>Olena Shevchuk</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/hoa17" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Associate Professor</p> 
@@ -783,31 +457,12 @@
                         <!-- <p><b>Research interests:</b> питання формування та розвитку людського капіталу.</p>
                         <p><b>Disciplines:</b> "Економічна теорія", «Основи економічної теорії (ринкової економіки)», «Економіка організації і планування виробництва».</p> -->
                         <p><b>Hobbies:</b> camping, traveling.</p>
-                        <p><b>e-mail:</b> shevchuk_oa@mail.ru</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/bordanova.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Lyudmila Bordanova</b></span>
-                            <p><i>Ph.D. in Economics, Senior lecturer</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#bordanova">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="bordanova" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Lyudmila Bordanova</h4>
+                        <p><b>e-mail:</b> shevchuk_oa@mail.ru</p>'
+        ],
+        '11' => [
+            'title' => 'Lyudmila Bordanova',
+            'desc' => 'Ph.D. in Economics, Senior lecturer',
+            'modal' => '<h4>Lyudmila Bordanova</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/bls5" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Senior lecturer</p>
@@ -824,7 +479,7 @@
                             <li>Improving youth employment policy at regional level <!-- / L.Bordanova // Scientific Herald Poltava University of Economics and Trade. A series of "Economics." - Part 1. - 2011. - №4. S.80-84. --></li>
                             <li>Identifying trends of the youth segment of the labor market Donetsk region <!-- / L.Bordanova // Formation of market economy: zb.nauk.prats: in 2 t. - Spets.vyp. Work in the XXI Century: new trends, the social dimension, innovative development. - K .: KNEU, 2012. - T.1.- S.147-156. --></li>
                             <li>Dynamics of youth employment in Donetsk region <!-- / L.Bordanova // Proceedings of the twelfth Ukrainian scientific conference "Problems of social and economic systems in the national and global economy." - Donetsk, Donna. - 2012. - S.17-19.. --></li>
-                            <li>Provide young first job in the city's anti-crisis system of personnel policy <!-- / L.Bordanova // Proceedings of the XII International Scientific Conference "Ways of improving economic activity of the country." - Lviv, LEF, 2012. S.93-97. --></li>
+                            <li>Provide young first job in the city\'s anti-crisis system of personnel policy <!-- / L.Bordanova // Proceedings of the XII International Scientific Conference "Ways of improving economic activity of the country." - Lviv, LEF, 2012. S.93-97. --></li>
                             <li>Priorities regulation of youth employment in Donetsk region <!-- / L.Bordanova // Problems and prospects of employment graduates: Eighth International Scientific Conference [materials]. - Donetsk: DonNUET 2013 S. 30-32. --></li>
                             <li>Conceptual framework regulation of youth employment at the regional labor market <!-- / Business L.Bordanova // Inform. - 2013. - № 9. - S.222-227. --></li>
                             <li>Features and directions of youth labor market regulation <!-- / L.Bordanova // Scientific Herald of Poltava University of consumer cooperatives in Ukraine. Series «Economics» .- 2010. - № 4, Part 1. - P. 82-86. --></li>
@@ -836,31 +491,12 @@
                         <p><b>Research interests:</b> analysis of the labor market.</p>
                         <p><b>Disciplines:</b> Basics of economic theory.</p>
                         <p><b>Hobbies:</b> camping, travel.</p>
-                        <p><b>e-mail:</b> bordanova.mila@yandex.ua</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/udovytskia.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Eugenia Udovytska</b></span>
-                            <p><i>Ph.D. in Economics, Senior lecturer </i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#udovytskia">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="udovytskia" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Eugenia Udovytska</h4>
+                        <p><b>e-mail:</b> bordanova.mila@yandex.ua</p>'
+        ],
+        '12' => [
+            'title' => 'Eugenia Udovytska',
+            'desc' => 'Ph.D. in Economics, Senior lecturer',
+            'modal' => '<h4>Eugenia Udovytska</h4>
                         <p><a href="http://intellect.ktpe.kpi.ua/profile/uea" target="_blank">Profile in Intellect</a></p>
                         
                         <p><b>Title:</b> Senior lecturer</p>
@@ -873,7 +509,7 @@
                         <ol>
                             <li>The mechanism of commercialization of state industrial enterprises <!-- // Proceedings NUFT - 2006. - №18. - S.163 - 165. --></li>
                             <li>Methodological bases commercialization of state industrial enterprises <!-- // Economy and State - 2005. - № 12. - p.78 - 80. --></li>
-                            <li>The state enterprise as a business entity <!-- // Economic Journal '2004 (1) "KPI". - Kyiv: "KPI", 2004. - p.156 - 160. --></li>
+                            <li>The state enterprise as a business entity <!-- // Economic Journal \'2004 (1) "KPI". - Kyiv: "KPI", 2004. - p.156 - 160. --></li>
                             <li>Management of public industrial enterprises of Ukraine <!-- // Economic Journal "2005 (2)" KPI ". - Kyiv: "KPI", 2005. - p.90 - 94. --></li>
                             <li>Theoretical aspects of anti-crisis strategies<!--  // corporation tax. Science. abstract V Intern. nauk.-prac. Conference "Anti-crisis development of social and economic processes in the context of globalization" - Bucha; 2015 --></li>
                             <li>Public-private partnership in Ukraine: Theory and Practice <!-- // collection. Science. abstract Intern. Scientific Conference "Economics in modern terms: state, problems and finding ways to overcome them"; - Lions; 2015 --></li>
@@ -881,31 +517,12 @@
                         <p><b>Research interests:</b> effective methods of business management in the public sector.</p>
                         <p><b>Disciplines:</b> Economics and Organization of Production Economics and Business, Economy software, Basics of Economic Theory, Fundamentals of business in the aerospace industry, economics and management companies ACS.</p>
                         <p><b>Hobbies:</b> travel.</p>
-                        <p><b>e-mail:</b> evanudov@ukr.net</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/obelets.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Tetiana Obelets</b></span>
-                            <p><i>Ph.D. in Economics, Senior lecturer</i></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#obelets">More information</a>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div id="obelets" class="modal modal-fixed-footer">
-                    <div class="modal-content">
-                        <h4>Tetiana Obelets</h4>
+                        <p><b>e-mail:</b> evanudov@ukr.net</p>'
+        ],
+        '13' => [
+            'title' => 'Tetiana Obelets',
+            'desc' => 'Ph.D. in Economics, Senior lecture',
+            'modal' => '<h4>Tetiana Obelets</h4>
                        <!--  <p><a href="http://intellect.ktpe.kpi.ua/profile/uea" target="_blank">Profile in Intellect</a></p> -->
                         
                         <p><b>Title:</b> Senior lecturer</p>
@@ -930,130 +547,36 @@
                         <ol>
                             <li>Krasouskaya T Export activity as a growth factor of competitiveness Ukraine <!-- / T Krasouskaya // Proceedings of the II International Scientific Conference Hadi "Problems and prospects of development of entrepreneurship" - Kharkov, December 19, 2008 - P. 71-72. (0.10 pp). --></li>
                             <li>Krasouskaya T Innovative directions of Engineering industry <!-- / T Krasouskaya // Proceedings II Scientific-practical conference of students and young scientists NTU KPI "Modern approaches to business management" - K., 28.04.2011 p. - P. 302-303. (0.12 pp). --></li>
-                            <li>Krasouskaya T The relationship between your performance engineering companies and their resource provision <!-- / T Krasouskaya // Proceedings VII International Scientific Conference "Science Days 2011" - Prague's 27.03.2011-05.04.2011. - P. 102-106. (0.20 pp). --></li>
+                            <li>Krasouskaya T The relationship between your performance engineering companies and their resource provision <!-- / T Krasouskaya // Proceedings VII International Scientific Conference "Science Days 2011" - Prague\'s 27.03.2011-05.04.2011. - P. 102-106. (0.20 pp). --></li>
                             <li>Krasouskaya T Evaluating the effectiveness of outsourcing <!-- / TVKrasouskaya // Actual problems of regional administration and local government: Proceedings of the conference with international participation (08.04.2011) / Under the general editorship of V Prysyazhnyuk, V Dakumenka, T Ivanov "- K .: Publishing and Printing Center of the Academy of Municipal Administration, in 2 parts, Part 1, 2011 - P. 352-354. (0.06 pp). --></li>
                             <li>Obelets T Definition Essentially the definition and implementation mechanism for the formation of the production program engineering companies <!-- / T Obelets // Proceedings of international scientific conference Center for Economic Research and Development "Prospects for economic growth and development of innovation." - Odessa, 18-19 April 2014 - P. 47-50. (0.13 pp). --></li>
                         </ol>
                         <p><b>Research interests:</b> innovation policy enterprises, management of scientific and technological development of enterprises.</p>
                         <p><b>Disciplines:</b> Basics of Economics, Business Organization and production planning</p>
                         <p><b>Hobbies:</b> Theater.</p>
-                        <p><b>e-mail:</b> krasovskaya83@mail.ru</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Back</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="helpers" class="col s12 m12">
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/renska.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Renska-Skrebniova Nataliia</b></span>
-                            <p><i>Head of the laboratory</i></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/meged.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Meged Nadiia</b></span>
-                            <p><i>Senior Engineer</i></p>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/kunytska.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Inna Kunytska</b></span>
-                            <p><i>Senior assistant</i></p>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo lecturer-photo">
-                        <img src="">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Julia Petrik</b></span>
-                            <p><i>Senior assistant</i></p>
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="card horizontal lecturer">
-                    <div class="card-image lecturer-photo">
-                        <img src="//lecturers/melnychuk.jpg">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <span class="card-title"><b>Viktoriia Melnychuk</b></span>
-                            <p><i>Senior assistant</i></p>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Department of Theoretical and Applied Economics</h5>
-                    <p class="grey-text text-lighten-4">Kyiv, Polytechnichna Ayr 12, building 17, room 216</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Contact us</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Phone: 204-85-07, 204-98-63</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">E-mail: kpte@ukr.net</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="http://dilcore.com/">by Dilcore</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Buger customizing -->
-    <script>
-        $('.button-collapse').sideNav({
-            menuWidth: 285, // Default is 300
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
-        });
-
-        $('.dropdown-button').dropdown({
-            inDuration: 300,
-            outDuration: 225,
-            constrain_width: false, // Does not change width of dropdown to that of the activator
-            hover: true, // Activate on hover
-            gutter: 0, // Spacing from edge
-            belowOrigin: false, // Displays dropdown below the button
-            alignment: 'left' // Displays dropdown with edge aligned to the left of button
-        });
-    </script>
-
-
-</body>
-
-</html>
+                        <p><b>e-mail:</b> krasovskaya83@mail.ru</p>'
+        ]
+    ],
+    'helpful' => [
+        '1'=>[
+            'title'=>'Renska-Skrebniova Nataliia',
+            'desc'=>'Head of the laboratory'
+        ],
+        '2'=>[
+            'title'=>'Meged Nadiia',
+            'desc'=>'Senior Engineer'
+        ],
+        '3'=>[
+            'title'=>'Inna Kunytska',
+            'desc'=>'Senior assistant'
+        ],
+        '4'=>[
+            'title'=>'Julia Petrik',
+            'desc'=>'Senior assistant'
+        ],
+        '5'=>[
+            'title'=>'Viktoriia Melnychuk',
+            'desc'=>'Senior assistant'
+        ]
+    ]
+];

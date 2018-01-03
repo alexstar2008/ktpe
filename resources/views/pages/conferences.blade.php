@@ -17,7 +17,7 @@
                                 <p class="date"><b>{{ $conference->created_at  }}</b></p>
                                 <p>{{ $conference->text }}</p>
                             </div><div class="card-action">
-                                <a href="#modal-conference{{ $key }}">Більше інформації</a>
+                                <a href="#modal-conference{{ $key }}">@lang('shared.more')</a>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <p>{{  $conference->text }}</p>
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Назад</a>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">@lang('shared.back')</a>
                         </div>
                     </div>
                 </div>
