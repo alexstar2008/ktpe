@@ -9,13 +9,11 @@
     <div class="form-horizontal">
         <h4>Змініть необхідну вам інформацію</h4>
         <hr />
-        {{--@Html.ValidationSummary(true, "", new { @class = "text-danger" })--}}
         {{--Company Name--}}
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Назва компанії</label>
             <div class="col-md-10">
-                <input class="form-control" name="company_name" value="{{$offer->company_name}}" />
-                {{--@Html.ValidationMessageFor(model => model.UaCompanyName, "", new { @class = "text-danger" })--}}
+                <input class="form-control" name="company_name" value="{{$offer->company_name}}" required />
             </div>
         </div>
         <div class="form-group">
@@ -28,13 +26,13 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Вакансія</label>
             <div class="col-md-10">
-                <input class="form-control" name="job" value="{{$offer->job}}" />
+                <input class="form-control" name="job" value="{{$offer->job}}" required />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Eng. Вакансія</label>
             <div class="col-md-10">
-                <input class="form-control" name="job_en" value="{{$offer->job_en}}" />
+                <input class="form-control" name="job_en" value="{{$offer->job_en}}"  />
             </div>
         </div>
         {{--Position--}}
@@ -54,7 +52,7 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Контактна особа</label>
             <div class="col-md-10">
-                <input class="form-control" name="contact_name" value="{{$offer->contact_name}}" />
+                <input class="form-control" name="contact_name" value="{{$offer->contact_name}}" required />
             </div>
         </div>
         <div class="form-group">

@@ -14,8 +14,7 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Заголовок</label>
             <div class="col-md-10">
-                <input class="form-control" name="title" />
-                {{--@Html.ValidationMessageFor(model => model.UaHeader, "", new { @class = "text-danger" })--}}
+                <input class="form-control" name="title" required />
             </div>
         </div>
         <div class="form-group">
@@ -27,13 +26,13 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Текст</label>
             <div class="col-md-10">
-                <input class="form-control" name="text" />
+                <textarea class="form-control" rows="4" name="text" required></textarea>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Eng. Текст</label>
             <div class="col-md-10">
-                <input class="form-control" name="text_en" />
+                <textarea class="form-control" rows="4" name="text_en"></textarea>
             </div>
         </div>
         <div class="form-group">

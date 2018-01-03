@@ -1,11 +1,11 @@
 ﻿.body-content{
     margin-top: 75px;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    left:calc(50% - 187px);
-}
+/*footer{*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left:calc(50% - 187px);*/
+/*}*/
 table{
     margin-top: 25px;
 }

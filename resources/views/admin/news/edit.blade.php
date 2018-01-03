@@ -10,8 +10,7 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Заголовок</label>
             <div class="col-md-10">
-                <input class="form-control" value="{{$newsItem->title}}" name="title" />
-                {{--@Html.ValidationMessageFor(model => model.UaText, "", new { @class = "text-danger" })--}}
+                <input class="form-control" value="{{$newsItem->title}}" name="title" required />
             </div>
         </div>
         <div class="form-group">
@@ -23,13 +22,13 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Текст</label>
             <div class="col-md-10">
-                <input class="form-control" value="{{$newsItem->text}}" name="text" />
+                <textarea class="form-control" rows="4" name="text" required >{{$newsItem->text}}</textarea>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Eng. Текст</label>
             <div class="col-md-10">
-                <input class="form-control" value="{{$newsItem->text_en}}" name="text_en" />
+                <textarea class="form-control" rows="4" name="text_en">{{$newsItem->text_en}}</textarea>
             </div>
         </div>
         <div class="form-group">

@@ -12,13 +12,11 @@
 <div class="form-horizontal">
     <h4>Тут ви можете оновити інформацію про конференцію</h4>
     <hr />
-    {{--@Html.ValidationSummary(true, "", new { @class = "text-danger" })--}}
 
     <div class="form-group">
         <label class="control-label col-md-2">Укр. Заголовок</label>
         <div class="col-md-10">
-            <input class="form-control" value="{{$conference->title}}" name="title" />
-            {{--@Html.ValidationMessageFor(model => model.UaHeader, "", new { @class = "text-danger" })--}}
+            <input class="form-control" value="{{$conference->title}}" name="title"  required/>
         </div>
     </div>
     <div class="form-group">
@@ -30,13 +28,13 @@
     <div class="form-group">
         <label class="control-label col-md-2">Укр. Текст</label>
         <div class="col-md-10">
-            <input class="form-control" value="{{$conference->text}}" name="text" />
+            <textarea class="form-control" rows="4" name="text" required>{{$conference->text}}</textarea>
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-md-2">Eng. Текст</label>
         <div class="col-md-10">
-            <input class="form-control" value="{{$conference->text_en}}" name="text_en" />
+            <textarea class="form-control" rows="4" name="text_en">{{$conference->text_en}}</textarea>
         </div>
     </div>
     <div class="form-group">

@@ -13,8 +13,7 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Назва компанії</label>
             <div class="col-md-10">
-                <input class="form-control" name="company_name" />
-                {{--@Html.ValidationMessageFor(model => model.UaCompanyName, "", new { @class = "text-danger" })--}}
+                <input class="form-control" name="company_name" required />
             </div>
         </div>
         <div class="form-group">
@@ -27,7 +26,7 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Вакансія</label>
             <div class="col-md-10">
-                <input class="form-control" name="job" />
+                <input class="form-control" name="job" required />
             </div>
         </div>
         <div class="form-group">
@@ -53,7 +52,7 @@
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Контактна особа</label>
             <div class="col-md-10">
-                <input class="form-control" name="contact_name" />
+                <input class="form-control" name="contact_name" required />
             </div>
         </div>
         <div class="form-group">
@@ -66,13 +65,13 @@
         <div class="form-group">
             <label class="control-label col-md-2">Телефон</label>
             <div class="col-md-10">
-                <input class="form-control" name="phone" />
+                <input class="form-control" name="phone" type="p" />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">E-mail</label>
             <div class="col-md-10">
-                <input class="form-control" name="email" />
+                <input class="form-control" name="email" type="email" />
             </div>
         </div>
 

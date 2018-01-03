@@ -8,29 +8,28 @@
     <div class="form-horizontal">
         <h4>Внесіть інформацію у всі поля на даній формі</h4>
         <hr />
-        {{--@Html.ValidationSummary(true, "", new { @class = "text-danger" })--}}
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Заголовок</label>
             <div class="col-md-10">
-                <input class="form-control" name="title" />
+                <input class="form-control" name="title" required />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Eng. Заголовок</label>
             <div class="col-md-10">
-                <input class="form-control" name="title_en" />
+                <input class="form-control" name="title_en  " />
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Укр. Текст</label>
             <div class="col-md-10">
-                <input class="form-control" name="text" />
+                <textarea class="form-control" rows="4" name="text" required></textarea>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-2">Eng. Текст</label>
             <div class="col-md-10">
-                <input class="form-control" name="text_en" />
+                <textarea class="form-control" rows="4" name="text_en"></textarea>
             </div>
         </div>
 

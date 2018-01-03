@@ -13,7 +13,7 @@
 
             $.ajax({
                 type: "POST",
-                url: 'http://cathedra-api.azurewebsites.net/api/files/upload',
+                url: '/api/img-load',
                 contentType: false,
                 processData: false,
                 data: data,

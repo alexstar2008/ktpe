@@ -22,15 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/conferences',function (){
-   return Conference::all();
-});
-Route::get('/offers',function (){
-    return Offer::all();
-});
-Route::get('/competitions',function (){
-    return Competition::all();
-});
-Route::get('/news',function (){
-    return News::all();
-});
+//Route::post('/img-load',function(Request $request){
+//    $img = $request->input('img');
+//    return $img->store('public') || false;
+//});
