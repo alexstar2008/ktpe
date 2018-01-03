@@ -14,7 +14,6 @@
             {{--crossorigin="anonymous"></script>--}}
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="{{ asset('css/bootstrap.css')  }}" rel="stylesheet"/>
-    <script src="{{ asset('js/bootstrap.min.js')  }}"></script>
 </head>
 <body>
 <div id="app">

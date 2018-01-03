@@ -45,7 +45,7 @@
                             <p><i>@lang('lectures.scientific.2.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#semenchenko">Дізнатись більше</a>
+                            <a href="#semenchenko">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         @lang('lectures.scientific.2.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
                             <p><i>@lang('lectures.scientific.3.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#ilyash">Дізнатись більше</a>
+                            <a href="#ilyash">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                         @lang('lectures.scientific.3.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@
                             <p><i>@lang('lectures.scientific.4.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#roshchyna">Дізнатись більше</a>
+                            <a href="#roshchyna">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         @lang('lectures.scientific.4.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -117,7 +117,7 @@
                             <p><i>@lang('lectures.scientific.5.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#duchenko">Дізнатись більше</a>
+                            <a href="#duchenko">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         @lang('lectures.scientific.5.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -141,7 +141,7 @@
                             <p><i>@lang('lectures.scientific.6.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#ivanytskia">Дізнатись більше</a>
+                            <a href="#ivanytskia">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                         @lang('lectures.scientific.6.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -165,7 +165,7 @@
                             <p><i>@lang('lectures.scientific.7.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#ereshko">Дізнатись більше</a>
+                            <a href="#ereshko">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         @lang('lectures.scientific.7.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -189,7 +189,7 @@
                             <p><i>@lang('lectures.scientific.8.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#lobodzynska">Дізнатись більше</a>
+                            <a href="#lobodzynska">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                         @lang('lectures.scientific.8.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -213,7 +213,7 @@
                             <p><i>@lang('lectures.scientific.9.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#pavlenko">Дізнатись більше</a>
+                            <a href="#pavlenko">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
                         @lang('lectures.scientific.9.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -237,7 +237,7 @@
                             <p><i>@lang('lectures.scientific.10.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#shevchuk">Дізнатись більше</a>
+                            <a href="#shevchuk">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -247,7 +247,7 @@
                         @lang('lectures.scientific.10.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -261,7 +261,7 @@
                             <p><i>@lang('lectures.scientific.11.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#bordanova">Дізнатись більше</a>
+                            <a href="#bordanova">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -271,7 +271,7 @@
                         @lang('lectures.scientific.11.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -285,7 +285,7 @@
                             <p><i>@lang('lectures.scientific.12.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#udovytskia">Дізнатись більше</a>
+                            <a href="#udovytskia">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@
                         @lang('lectures.scientific.12.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
 
@@ -309,7 +309,7 @@
                             <p><i>@lang('lectures.scientific.13.desc')</i></p>
                         </div>
                         <div class="card-action">
-                            <a href="#obelets">Дізнатись більше</a>
+                            <a href="#obelets">@lang('lectures.more')</a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +319,7 @@
                         @lang('lectures.scientific.13.modal')
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Назад</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">@lang('lectures.back')</a>
                     </div>
                 </div>
             </div>
