@@ -26,12 +26,6 @@ Route::prefix('/admin')->group(function(){
     Route::get('/auth',function (){
         return view('admin.user.auth');
     });
-//    Route::post('/register','Auth\RegisterController@create')->name('register-user');
-//
-//    Route::get('/register',function (){
-//        return view('auth.register');
-//    })->name('register');
-
     Route::resource('conferences','ConferencesController');
     Route::resource('news','NewsController');
     Route::resource('competitions','CompetitionsController');

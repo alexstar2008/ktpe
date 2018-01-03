@@ -10,7 +10,7 @@
                         <div class="card horizontal">
                             @if(isset($competition->img))
                                 <div class="card-image">
-                                    <img src="{{ asset('/storage/'.$competition->img) }}">
+                                    <img src="{{ asset('/storage'.$competition->img) }}">
                                 </div>
                             @endif
                             <div class="card-stacked">

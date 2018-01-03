@@ -38,7 +38,7 @@
             <div class="col-md-10" style="display: none"></div>
             <div class="col-md-10">
                 @isset($competition->img)
-                    <img id="imm" src="{{ asset('/storage/'.$competition->img) }}" alt="Photo" style="width: 200px; height: 200px;" class="img-rounded">
+                    <img id="imm" src="{{ asset('/storage'.$competition->img) }}" alt="Photo" style="width: 200px; height: 200px;" class="img-rounded">
                 @endisset
                 <input type="file" name="img" id="uploadFile" id="PhotoLink" /><br />
                 {{--<a id="photoUploadSubmit" class="btn btn-default">Завантажити</a>--}}
