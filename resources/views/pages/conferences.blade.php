@@ -1,5 +1,5 @@
 @extends('pages.app')
-@section('title',__('activity.seo_title'))
+@section('title',__('conferences.seo_title'))
 
 @section('content')
     <div class="container" style="margin-top: 20px;">
