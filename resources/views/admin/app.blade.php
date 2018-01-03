@@ -9,34 +9,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <script src="~/scripts/tinymce/tinymce.min.js"></script>
-    <!-- Script to wire up your TinyMCE editor -->
-    <script type="text/javascript">
-        // Initialize your tinyMCE Editor with your preferred options
-        tinyMCE.init({
-            // General options
-            mode: "textareas",
-            theme: "modern",
-            // Theme options
-            theme_advanced_buttons1: "save,newdocument,|,bold,italic,underline, strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|, styleselect,formatselect,fontselect,fontsizeselect",
-            theme_advanced_buttons2: "cut,copy,paste,pastetext,pasteword,|, search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|, link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|, forecolor,backcolor",
-            theme_advanced_buttons3: "tablecontrols,|,hr,removeformat,visualaid,|, sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
-            theme_advanced_buttons4: "insertlayer,moveforward,movebackward,absolute,|, styleprops,spellchecker,|,cite,abbr,acronym,del,ins,attribs,|, visualchars,nonbreaking,template,blockquote,pagebreak,|,insertfile,insertimage",
-            theme_advanced_toolbar_location: "top",
-            theme_advanced_toolbar_align: "left",
-            theme_advanced_statusbar_location: "bottom",
-            theme_advanced_resizing: true,
-
-            // Example content CSS (should be your site CSS)
-            content_css: "css/example.css"
-        });
-    </script>
     <link href="{{ asset('css/style.admin.css')  }}" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="{{ asset('css/bootstrap.css')  }}" rel="stylesheet"/>
-{{--    <script src="{{ asset('js/bootstrap.min.js')  }}"></script>--}}
+    <script src="{{ asset('js/bootstrap.min.js')  }}"></script>
 </head>
 <body>
 <div id="app">
